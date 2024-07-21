@@ -14,8 +14,6 @@ body{
 }
 
 .container{
-    background-color: rgb(35, 128, 97);
-
     max-width: 720px;
     display: flex;
     flex-direction: column;
@@ -75,14 +73,17 @@ body{
     border: 1px solid #696969;
     user-select: none;
     transition: transform 0.8s;
+}
 
+.hide{
+    display: none;
 }
 
 .result:hover{
     transform: scale(1.1);
 }
 
-.result spa{
+.result span{
     color: #fff;
     margin-top: 8px;
 }
@@ -90,11 +91,12 @@ body{
 #text-result{
     font-size: 24px;
     font-weight: bold;
+    color: #ffffff;    
 }
 
 .info{
   position: fixed;
-  right: 14px;
+  right: 15px;
   bottom: 22px;  
 }
 
@@ -115,4 +117,32 @@ body{
 
 .info:hover .tooltip{
     display: inline;
+}
+.sobre{
+    max-width: 620px;
+    background-color: #242424;
+    padding: 24px 14px;
+    border: 1px solid #696969;
+    border-radius: 4px;
+}
+
+.sobre p {
+    color: #fff;
+    margin-bottom: 8px;
+    line-height: 150%;
+}
+
+.button-calcular{
+    background-color: #119cea;
+    height: 48px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 24px;
+    border-radius: 4px;
 }
